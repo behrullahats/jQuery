@@ -231,30 +231,63 @@
 // });
 
 
-$(document).ready(function () {
+// $(document).ready(function () {
 
 
-    //Birinci DİV etkilenir
-    // $('div').first().css({
-    //     'background-color': 'red'
-    // });
+//     //Birinci DİV etkilenir
+//     // $('div').first().css({
+//     //     'background-color': 'red'
+//     // });
 
-    //Sonuncu Div etkilenir
-    // $('div').last().css({
-    //     'background-color': 'red'
-    // });
-
-
-    // Belirtilen Div etkilenmez
-    // $('div').not('.belirtisiz').css({
-    //     'background-color': 'red'
-    // });
-
-    // Belirtilen Div etkilenir
-    $('div').filter('.belirtisiz').css({
-        'background-color': 'red'
-    });
+//     //Sonuncu Div etkilenir
+//     // $('div').last().css({
+//     //     'background-color': 'red'
+//     // });
 
 
+//     // Belirtilen Div etkilenmez
+//     // $('div').not('.belirtisiz').css({
+//     //     'background-color': 'red'
+//     // });
 
+//     // Belirtilen Div etkilenir
+//     $('div').filter('.belirtisiz').css({
+//         'background-color': 'red'
+//     });
+
+
+
+// });
+
+//EACH SEÇİCİSİ
+
+// $(function () {
+
+
+//     $('ul li').each(function (index) {
+
+//         alert(index + ".Eleman " + $(this).text());
+
+//     });
+
+
+// });
+
+
+//Slice Seçicisi
+// $(function () {
+//     $('li').slice(2, 5).css({
+//         'background-color': 'red'
+//     });
+// });
+
+
+//is Seçicisi
+
+$(function () {
+    if ($('div').is('.udemy')) {
+        $('b').text("Var");
+    } else {
+        $('b').text('yok');
+    }
 });
