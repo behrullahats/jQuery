@@ -72,13 +72,108 @@
 
 // });
 
-$(document).ready(function () {
+// $(document).ready(function () {
 
 
-    $('#ekle').click(function () {
+//     $('#ekle').click(function () {
 
-        $('input:last').before("<input type='file' name='yukle[]'><br><br>");
+//         $('input:last').before("<input type='file' name='yukle[]'><br><br>");
+
+//     });
+
+// });
+
+
+//Clone Kullanımı
+
+// $(document).ready(function () {
+//     $('div').clone().insertAfter('p');
+// });
+
+//text kullanımı
+
+// $(document).ready(function () {
+
+//     $('div').text("Div elemanına eklendi");
+//     $('p').text('p elemanına eklendi');
+//     $('b').text('b elemanına eklendi');
+//     $('a').text('a elemanına eklendi');
+
+// });
+
+//replace kullanımı
+
+// $(document).ready(function () {
+
+//     $('button').click(function () {
+//         $('p').replaceWith('<p>Değiştirildim');
+//     });
+
+// });
+
+//Empty Kullanımı
+
+// $(document).ready(function () {
+//     $('button').click(function () {
+
+//         $('p').empty();
+//     });
+// });
+
+//remove kullanımı
+// $(document).ready(function () {
+//     $('button').click(function () {
+
+//         $('p').remove();
+//     });
+// });
+
+//elemanların verilerine erişme
+
+// $(function () {
+//     $('a').text("Hepsi erbaa web sitesi").attr('href', 'https://www.hepsierbaa.com').attr('style', 'color:blue');
+// });
+
+//Sitillere erişme
+
+// $(document).ready(function () {
+//     $('button').click(function () {
+//         $('div').css({
+//             'background-color': 'blue'
+//         });
+//     });
+// });
+
+//html kullanımı
+
+// $().ready(function () {
+
+//     //içeriğini alır
+//     // alert($('p').html());
+
+//     //içeriğini değiştirmek için
+
+//     // $('p').html('merhaba naber');
+
+//     //başka bir içeriğe yollama
+
+
+// });
+
+//value
+
+$().ready(function () {
+    $('button').click(function () {
+        var liste = $('select').val();
+        if (liste == 'a') {
+            alert("a seçildi");
+        } else if (liste == 'b') {
+            alert("b seçildi");
+        } else if (liste == 'c') {
+            alert("c seçildi");
+        } else if (liste == 'd') {
+            alert("d seçildi");
+        }
 
     });
-
 });
