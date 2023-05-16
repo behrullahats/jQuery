@@ -162,18 +162,125 @@
 
 //value
 
-$().ready(function () {
-    $('button').click(function () {
-        var liste = $('select').val();
-        if (liste == 'a') {
-            alert("a seçildi");
-        } else if (liste == 'b') {
-            alert("b seçildi");
-        } else if (liste == 'c') {
-            alert("c seçildi");
-        } else if (liste == 'd') {
-            alert("d seçildi");
-        }
+// $().ready(function () {
+//     $('button').click(function () {
+//         var liste = $('select').val();
+//         if (liste == 'a') {
+//             alert("a seçildi");
+//         } else if (liste == 'b') {
+//             alert("b seçildi");
+//         } else if (liste == 'c') {
+//             alert("c seçildi");
+//         } else if (liste == 'd') {
+//             alert("d seçildi");
+//         }
 
+//     });
+// });
+
+
+//length
+// $(function () {
+
+//     $('option:last').after('<option>f</option>').before('<option>f</option>');
+
+//     $('button').click(function () {
+//         $('p').text("Option Eleman Sayısı:" + $('option').length);
+//     });
+// });
+
+
+//get
+
+// $(function () {
+//     var say = $('li').get();
+
+//     $('b').text('Ulaşılan eleman indix sayısı : ' + $(say).eq(1).text());
+
+// });
+
+//index
+// $(function () {
+
+//     $('b').text('seçilen indixin sayı numarası: ' + $('.html').index());
+// });
+
+//16.06.2023
+//On fonksiyonu
+//Olay yakalama fonksiyonudur.
+
+// $().ready(function () {
+
+//     $("body").on('click', 'button', function () {
+
+//         $(this).after('<button>Yeni Buton Eklendi</button>');
+//     });
+// });
+
+//One fonksiyonu
+//Bir olayın sadece bir kere gerçekleşmesini sağlar.
+
+// $().ready(function () {
+
+//     $("body").one('click', 'button', function () {
+
+//         $(this).after('<button>Yeni Buton Eklendi</button>');
+//     });
+// });
+
+
+
+// //One ile ilgili Ödev
+
+// $().ready(function () {
+
+//     $('body').one('click', 'button', function () {
+
+
+//         $('input').after('<input type="file">')
+
+
+//     });
+
+
+// });
+
+//One ile ilgili Ödev
+
+// $().ready(function () {
+
+//     $('body').on('click', '#ekle', function () {
+//         $(this).after('<button>Yeni Buton Eklendi</button>');
+
+
+
+//     });
+//     $('body').on('click', '#kaldir', function () {
+
+//         $('body').off();
+
+
+//     });
+
+
+
+// });
+
+
+//Trigger Olayı
+//Bir önceki nesnenin aynısını tetiklemeye yarar.
+
+$(function () {
+
+
+    $('#btn1').click(function () {
+
+        alert("BİRİNCİ BUTON TETİKLENDİ");
     });
+    $('#btn2').click(function () {
+        $('#btn1').trigger('click');
+    });
+
+
+
 });
