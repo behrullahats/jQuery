@@ -27,21 +27,21 @@ $(function () {
 
         $('div').text("basılan tuş : " + a);
 
-        if (a == 119) {
+        if (a == 87) {
             $('div').animate({
-                marginTop: "-=10px"
+                marginTop: "-=1px"
             });
-        } else if (a == 115) {
+        } else if (a == 83) {
             $('div').animate({
-                marginTop: "+=10px"
+                marginTop: "+=1px"
             });
-        } else if (a == 100) {
+        } else if (a == 68) {
             $('div').animate({
-                marginLeft: "+=10px"
+                marginLeft: "+=1px"
             });
-        } else if (a == 97) {
+        } else if (a == 65) {
             $('div').animate({
-                marginLeft: "-=10px"
+                marginLeft: "-=1px"
             });
         }
     });
